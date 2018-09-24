@@ -1,10 +1,10 @@
 language: python
 python:
- - "3.7"
+ - "3.5"
  
- before_install:
+before_install:
   - "pip install -U pip"
-  - "python setup.py install"
+  - "export PYTHONPATH=$PYTHONPATH:$(pwd)"
 
 # command to run tests
 script:
